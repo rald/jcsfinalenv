@@ -1,0 +1,27 @@
+{% extends "pmi/base.html" %}
+
+{% load static %}
+
+{% block title %}Product Details{% endblock %}
+
+{% block content %}
+
+<center>
+
+  <h3>Product Details</h3>
+
+  <img width="256px" src="{{ product.photo.url }}"><br/>
+
+  Code: {{ product.code }}<br/> 
+
+  Name: {{ product.name }}<br/> 
+  
+  Price: Php {{ product.price }}<br/>
+
+  Description:<br/>
+
+  {{ product.description }}<br/>
+
+</center>
+
+{% endblock %}

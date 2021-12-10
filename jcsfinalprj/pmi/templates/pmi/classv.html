@@ -1,0 +1,18 @@
+{% extends "contactus/base.html" %}
+
+{% load static %}
+
+{% block title %}classv{% endblock %}
+
+{% block content %}
+
+  <h5>Contact us for more details (CLASS VIEWS)</h5>
+  <a href="{% url 'functionv' id %}">See also sample of function views</a><br/>
+
+  <h5>Contact Details</h5>
+  <hr>
+  <font size="4">{{ contact.full_name }}, {{ contact.email }}</font><br/>
+  {{ contact.date_entry }}, {{ contact.address }}<br/>
+  <h5>{{ contact.description }}</h5>
+
+{% endblock %}
